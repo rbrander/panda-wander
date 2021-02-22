@@ -1,0 +1,1 @@
+[[{"x":0,"y":0,"walls":["north","south","west"]},{"x":0,"y":1,"walls":["north","west"]},{"x":0,"y":2,"walls":["south","west"]}],[{"x":1,"y":0,"walls":["north","east"]},{"x":1,"y":1,"walls":["east","south"]},{"x":1,"y":2,"walls":["north","south"]}],[{"x":2,"y":0,"walls":["north","east","west"]},{"x":2,"y":1,"walls":["east","west"]},{"x":2,"y":2,"walls":["east","south"]}]]
