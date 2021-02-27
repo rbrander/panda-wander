@@ -1,11 +1,11 @@
-import Sprite from './Sprite.js'
-import Star from './Star.js'
-import Door from './Door.js'
+import Sprite from './Sprite.mjs'
+import Star from './Star.mjs'
+import Door from './Door.mjs'
 
 const MAP_URLS = [
-  '../maps/map-3x3.js',
-  '../maps/map-11x11.js',
-  '../maps/map-100x100.js'
+  '../maps/map-3x3.mjs',
+  '../maps/map-11x11.mjs',
+  '../maps/map-100x100.mjs'
 ]
 const MAP_URL = MAP_URLS[1]
 const MAP_EMPTY = 0
@@ -30,11 +30,11 @@ const TILE_SPRITE_COLOURS = [
   'violet',
   'gold'
 ]
-const TILE_SPRITE_SHEET_URL = '../assets/Tiles.png'
+const TILE_SPRITE_SHEET_URL = 'assets/Tiles.png'
 const TILE_SIZE = 48 // pixels
 
 // Wood Floor tile from https://opengameart.org/content/wood-floor
-const FLOOR_TILE_URL = '../assets/Wood Floor.png'
+const FLOOR_TILE_URL = 'assets/Wood Floor.png'
 const FLOOR_TILE_SIZE = 32 // px square
 
 const getTileSprite = (colour) => new Promise((resolve, reject) => {

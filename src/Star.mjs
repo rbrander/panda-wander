@@ -1,10 +1,10 @@
-import Sprite from './Sprite.js'
+import Sprite from './Sprite.mjs'
 
 // star sprite found at: https://opengameart.org/content/coin-animation
 
 // TODO: load star images globally; not on instance
 
-const STAR_TILE_URL = './assets/stars.png'
+const STAR_TILE_URL = 'assets/stars.png'
 const NUM_STAR_FRAMES = 6
 const STAR_TILE_SIZE = 48
 const FRAMES_PER_SECOND = 12

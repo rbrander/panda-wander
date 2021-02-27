@@ -12,8 +12,8 @@
 // TODO: add door interation (animation and trigger)
 // TODO: add support for going to next level
 
-import Player from './Player.js'
-import Maze from './Maze.js'
+import Player from './Player.mjs'
+import Maze from './Maze.mjs'
 
 const canvas = document.getElementById('canvas')
 const ctx = canvas.getContext('2d', { alpha: true })

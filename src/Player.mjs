@@ -1,11 +1,14 @@
-import Sprite from './Sprite.js'
+import Sprite from './Sprite.mjs'
+
+const STAR_COIN_URL = 'assets/star-coin.png'
+const STAR_COIN_SIZE = 48
 
 // Coin sound from https://opengameart.org/content/10-8bit-coin-sounds (coin7)
-const COIN_SOUND_URL = './assets/coin.wav'
+const COIN_SOUND_URL = 'assets/coin.wav'
 
 // Panda sprite found at: https://opengameart.org/content/panda-character-32x32
 
-const PANDA_URL = '../assets/Panda.png'
+const PANDA_URL = 'assets/Panda.png'
 const PANDA_TILE_SIZE = 32 // pixels
 const MS_PER_FRAME = 80 // milliseconds
 
@@ -24,7 +27,7 @@ class Player {
     this.coinSound = new Audio(COIN_SOUND_URL)
 
     this.starSprite = undefined
-    Sprite.fromImage('../star48/1.png', 48 /* STAR_TILE_SIZE */, 48 /* STAR_TILE_SIZE */)
+    Sprite.fromImage(STAR_COIN_URL, STAR_COIN_SIZE, STAR_COIN_SIZE)
       .then(star => this.starSprite = star)
 
     // Sprite will be a panda

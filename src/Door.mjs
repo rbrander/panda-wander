@@ -1,8 +1,8 @@
 // This file represents the door sprite
-import Sprite from './Sprite.js'
+import Sprite from './Sprite.mjs'
 
 // door image obtained from https://opengameart.org/content/door-0
-const DOOR_SPRITE_URL = './assets/door.png'
+const DOOR_SPRITE_URL = 'assets/door.png'
 const SPRITE_HEIGHT = 32 // px
 const SPRITE_WIDTH = 16 // px
 const SCALE = 3
