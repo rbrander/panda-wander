@@ -25,6 +25,7 @@ class Player {
     this.width = Math.floor(PANDA_TILE_SIZE * this.scale)
     this.height = Math.floor(PANDA_TILE_SIZE * this.scale)
     this.coinSound = new Audio(COIN_SOUND_URL)
+    this.coinSound.volume = 0.2 // 20% of max volume
 
     this.starSprite = undefined
     Sprite.fromImage(STAR_COIN_URL, STAR_COIN_SIZE, STAR_COIN_SIZE)
