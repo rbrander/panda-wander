@@ -28,12 +28,15 @@ class InputHandler {
     InputHandler.KEYS_DOWN.add(e.which)
   }
 
+  pressedAnyKey() {
+    return InputHandler.KEYS_DOWN.size > 0
+  }
+
   pressedOneOf(keys) {
     // given a running result, and a key from the collection, check if the
     // key exists in the KEYS_DOWN set.  If any of the keys are down, the
     // result will be true
-    return keys.reduce((result, key) =>
-      (result || InputHandler.KEYS_DOWN.has(key), false)
+    return keys.reduce((result, key) => (result || InputHandler.KEYS_DOWN.has(key)), false)
   }
 }
 

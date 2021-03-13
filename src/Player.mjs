@@ -7,7 +7,6 @@ const STAR_COIN_SIZE = 48
 const COIN_SOUND_URL = 'assets/coin.wav'
 
 // Panda sprite found at: https://opengameart.org/content/panda-character-32x32
-
 const PANDA_URL = 'assets/Panda.png'
 const PANDA_TILE_SIZE = 32 // pixels
 const MS_PER_FRAME = 80 // milliseconds
@@ -23,7 +22,9 @@ class Player {
     this.totalStars = totalStars
     this.numStarsCollected = 0
     this.width = Math.floor(PANDA_TILE_SIZE * this.scale)
+    this.halfWidth = (this.width >> 1)
     this.height = Math.floor(PANDA_TILE_SIZE * this.scale)
+    this.halfHeight = (this.height >> 1)
     this.coinSound = new Audio(COIN_SOUND_URL)
     this.coinSound.volume = 0.2 // 20% of max volume
 
@@ -145,6 +146,7 @@ class Player {
       // background, semi-transparent
       ctx.fillStyle = '#cccccc77'
       ctx.strokeStyle = 'black'
+      ctx.lineWidth = 2
       ctx.beginPath()
       ctx.moveTo(boxLeft, boxTop)
       ctx.lineTo(boxLeft + boxWidth, boxTop)
@@ -170,6 +172,7 @@ class Player {
     )
     if (overlapsWithPlayer) {
       this.numStarsCollected++
+      // NOTE: increasing speed introduced problem with collision detection
       // this.speed += 1
       this.coinSound.play()
     }

@@ -1,0 +1,18 @@
+body {
+  font-family: 'JetBrainsMono-Regular', Arial;
+  background-color:#505050;
+  color: white;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+#canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-Index: -1;
+}
